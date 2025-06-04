@@ -1,0 +1,38 @@
+baseURL = "https://example.com"
+languageCode = "zh-cn"
+DefaultContentLanguage = "cn"
+title = "瞬息通界"
+theme = "yinyang"
+
+[author]
+name = "Pi3"
+homepage = "https://blog.pi3.fun/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    guessSyntax = true
+    noClasses = true
+    style = "bw"
+    tabWidth = 2
+
+[params]
+extraHead = ''
+favicon = "favicon.png"
+headTitle = "瞬息通界"
+Description = "在瞬息万变的世界中，轻松通晓科技与时政"
+mainSections = ["posts"]
+
+[params.giscus]  # https://giscus.app
+enable = false
+script = """ """
+
+[[params.socials]]
+name = "RSS"
+link = "/index.xml"
+
+[[params.socials]]
+name = "Blog"
+link = "https://blog.pi3.fun/"
